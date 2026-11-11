@@ -55,7 +55,7 @@ function App() {
       } finally {
         if (!controller.signal.aborted) setLoading(false);
       }
-    }, 250);
+    }, 1000);
     return () => {
       clearTimeout(timer);
       controller.abort();
